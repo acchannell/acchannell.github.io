@@ -26,6 +26,7 @@
 }
 
 #header h3 {
+	font-family: Courier;
 	padding-top:70px;
 	display: flow;
 	font-size: large;
@@ -42,8 +43,6 @@ nav {
 	display: inline;
 	background-color: var(--header_bg);
 	height: 35px;
-	background-image: url(images/bg_nav.gif);
-	background-repeat: repeat-x;
 }
 
 nav li {
@@ -53,9 +52,16 @@ nav li {
 	height: 35px;
 	background-color: var(--header_bg);
 	text-align: center;
-	border-left: 4px black solid;
+	border-left: 3px black solid;
 	line-height: 35px;
 }
+
+nav li:hover {
+	transform: translateY(-7px);
+	transition-delay: 0s;
+	transition-timing-function: ease;
+	transition-duration: 0.2s;
+}	
 
 nav ul li a {
 	color:#ffffff;
@@ -64,6 +70,10 @@ nav ul li a {
 }
 
 nav ul li a:hover {
+	transition-delay: 0s;
+	transition-timing-function: ease;
+	transition-duration: 0.2s;
+	
 	background-color:#29336b;
 	color:#F8F068;
 }
