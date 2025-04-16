@@ -8,19 +8,24 @@
 
 <script type = "text/javascript" src = "jquery.js"> </script>
 <script>
+	
+	
 	$(document).ready(function() {
 		$('gallery').find('p').css({'display' : 'block'});
 		$('.triggerImagedesc').hover(function() {
 			var para = $(this).parent().find('p');
-			var m = $(this).css('transform');
-			var mt = m.substring(m.indexOf('(') + 1, m.indexOf(')')).split(',');
-			console.log(mt[0])
+			var scale = getComputedStyle(document.documentElement).getPropertyValue('--img_scale');
+			var scaleX = Math.round($(this).width() * scale) / $(this).width();
+			var scaleY = Math.round($(this).height() * scale) / $(this).height();
+			console.log($(this).height() * scaleY);
+			$(this).css({'transform' : 'scale(' + scaleX + ',' + scaleY + ')'});
 			para.stop();
 			para.slideDown(100);
-			para.css({
-				'width' : ($(this).width() * mt[0] + 14 + 'px')
-			});
+			<!-- para.css({ -->
+				<!-- 'width' : ($(this).width() * mt[0] + 14 + 'px') -->
+			<!-- }); -->
 		}, function() {
+			$(this).css({'transform' : 'scale(1, 1)'});
 			var para = $(this).parent().find('p');
 			para.stop();
 			para.hide();
@@ -41,7 +46,7 @@
 						<li><a class="nav-art" href="">art</a></li>
 					</ul>
 				</nav>
-				<h3>>OvergrownRobot | (1.26)</h3>
+				<h3>>OvergrownRobot | (1.27)</h3>
 			</div>
 			
 			<div id="gallery">
