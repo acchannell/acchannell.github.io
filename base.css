@@ -23,6 +23,7 @@
 }
 
 #gallery p {
+	overflow: visible;
 	will-change: transform;
 	display: none;
 	pointer-events: none;
@@ -53,6 +54,7 @@
 }
 
 #main {
+	overflow: visible;
 	width: var(--page_width);
 	margin: 0 auto;
 	background: #e3e3e3;
