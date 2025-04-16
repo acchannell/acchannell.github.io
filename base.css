@@ -17,19 +17,23 @@
 	
 }
 
+#gallery p:not(.year) {
+	background: black;
+	opacity: 0.78;
+	color: white;
+	padding-top:10px;
+	padding-bottom:10px;
+}
+
 #gallery p {
 	pointer-events: none;
-	vertical-align:bottom;
-	text-align:right;
+	text-align:bottom;
 	position: absolute;
 	box-sizing: border-box;
-	padding-right: 20px;
-	padding-top: 3px;
+	padding: 10px;
 	height: var(--desc_height);
 	margin: calc(-7.5px - var(--desc_height)) calc(-1 * var(--pic_border) - 1px);
-	background: black;
-	opacity: 0.75;
-	color: white;
+	color: gray;
 }
 
 #gallery img:hover {
