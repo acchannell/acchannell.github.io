@@ -7,16 +7,13 @@
 	--img_scale: 1.05;
 	--desc_height: 40px;
 }
-
 #gallery {
 	margin-right: calc(var(--pic_border) * var(--col));
 	gap: 1rem;
 	padding:10px;
 	columns: var(--col); 
-	box-sizing: border_box;
-	
+	box-sizing: border_box;	
 }
-
 #gallery p:not(.year) {
 	background: black;
 	opacity: 0.78;
@@ -26,6 +23,7 @@
 }
 
 #gallery p {
+	will-change: transform;
 	display: none;
 	pointer-events: none;
 	position: absolute;
@@ -35,6 +33,7 @@
 	margin: calc(-7.5px - var(--desc_height)) calc(-1 * var(--pic_border) - 1px);
 	color: gray;
 }
+
 
 #gallery img:hover {
 	transform: scale(var(--img_scale), var(--img_scale));
