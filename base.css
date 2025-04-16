@@ -13,6 +13,7 @@
 	padding:10px;
 	columns: var(--col); 
 	box-sizing: border_box;	
+	position:relative;
 }
 #gallery p:not(.year) {
 	background: black;
