@@ -6,7 +6,7 @@
 <script type = "text/javascript" src = "jquery.js"> </script>
 <script>
 	$(document).ready(function() {
-		$('p').hide();
+		$('gallery').find('p').css({'display' : 'flow'});
 		$('.triggerImagedesc').hover(function() {
 			var para = $(this).parent().find('p');
 			var m = $(this).css('transform');
