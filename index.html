@@ -3,6 +3,28 @@
 <link href="base.css" rel="stylesheet" type="text/css" />
 <link href="fonts.css" rel="stylesheet" type="text/css" />
 
+<script type = "text/javascript" src = "jquery.js"> </script>
+<script>
+	$(document).ready(function() {
+		$('p').hide();
+		$('.triggerImagedesc').hover(function() {
+			var para = $(this).parent().find('p');
+			var m = $(this).css('transform');
+			var mt = m.substring(m.indexOf('(') + 1, m.indexOf(')')).split(',');
+			console.log(mt[0])
+			para.stop();
+			para.delay(150).slideToggle(100);
+			para.css({
+				'width' : ($(this).width() * mt[0] + 6 + 'px')
+			});
+		}, function() {
+			var para = $(this).parent().parent().find('p');
+			para.stop();
+			para.hide();
+		});
+	});
+</script>
+
 <html>
 	<body id = "art">
 		<div id = "main">
@@ -19,9 +41,35 @@
 				<h3>>OvergrownRobot |</h3>
 			</div>
 			
-			
-			<div id="main">
-				<p>I'm hosted with GitHub Pages.</p>
+			<div id="gallery">
+				<div id="skull">
+						<img class="triggerImagedesc" src="images/0.png" alt="Skull">
+						<p>hi</p>
+				</div>
+				<div id="bloom">
+						<img class="triggerImagedesc" src="images/1.png" alt="Skull">
+						<p>hi</p>
+				</div>
+				<div id="biosphere">
+						<img class="triggerImagedesc" src="images/2.png" alt="Skull">
+						<p>hi</p>
+				</div>
+				<div id="g">
+						<img class="triggerImagedesc" src="images/3.png" alt="Skull">
+						<p>hi</p>
+				</div>
+				<div id="h">
+						<img class="triggerImagedesc" src="images/4.png" alt="Skull">
+						<p>hi</p>
+				</div>
+				<div id="i">
+						<img class="triggerImagedesc" src="images/5.png" alt="Skull">
+						<p>hi</p>
+				</div>
+				<div id="j">
+						<img class="triggerImagedesc" src="images/6.png" alt="Skull">
+						<p>hi</p>
+				</div>
 			</div>
 		</div>
 	</body>
