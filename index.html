@@ -13,12 +13,12 @@
 			var mt = m.substring(m.indexOf('(') + 1, m.indexOf(')')).split(',');
 			console.log(mt[0])
 			para.stop();
-			para.delay(150).slideToggle(100);
+			para.slideDown(100);
 			para.css({
-				'width' : ($(this).width() * mt[0] + 6 + 'px')
+				'width' : ($(this).width() * mt[0] + 14 + 'px')
 			});
 		}, function() {
-			var para = $(this).parent().parent().find('p');
+			var para = $(this).parent().find('p');
 			para.stop();
 			para.hide();
 		});
