@@ -41,6 +41,7 @@
 
 
 #gallery img:hover {
+	box-sizing: border-box;
 	transform: scale(var(--img_scale), var(--img_scale));
   	transition-delay: 0s;
 	transition-timing-function: ease;
@@ -51,7 +52,8 @@
 #gallery img {
 	margin-bottom: 0.7rem;
 	vertical-align: bottom;
-	/* border: var(--pic_border) solid rgba(255, 255, 255, 0); */
+	box-sizing: border-box;
+	border: var(--pic_border) solid rgba(255, 255, 255, 0);
 	display: inline-block;
 	width: 100%;
 	height: auto;
