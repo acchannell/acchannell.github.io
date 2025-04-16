@@ -51,7 +51,7 @@
 #gallery img {
 	margin-bottom: 0.7rem;
 	vertical-align: bottom;
-	border: var(--pic_border) solid rgba(255, 255, 255, 0);
+	/* border: var(--pic_border) solid rgba(255, 255, 255, 0); */
 	display: inline-block;
 	width: 100%;
 	height: auto;
