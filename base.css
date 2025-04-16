@@ -13,7 +13,6 @@
 	padding:10px;
 	columns: var(--col); 
 	box-sizing: border_box;	
-	position:relative;
 }
 #gallery p:not(.year) {
 	background: black;
@@ -59,7 +58,6 @@
 	background: #e3e3e3;
 	border-radius:12px;
 	height: auto;
-	position: relative;
 }
 
 #header {
