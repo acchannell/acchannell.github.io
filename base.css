@@ -28,7 +28,6 @@
 #gallery p {
 	display: none;
 	pointer-events: none;
-	text-align:bottom;
 	position: absolute;
 	box-sizing: border-box;
 	padding: 10px;
