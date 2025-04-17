@@ -20,12 +20,13 @@
 }
 
 .imgcont {
-	will-change: transform;
 	position: relative;
 	padding: 10px;
+	box-sizing: border-box;
 }
 
 #gallery p {
+	will-change: transform;
 	line-height: var(--desc_height);
 	display: none;
 	pointer-events: none;
@@ -45,9 +46,8 @@
   	transition-delay: 0s;
 	transition-timing-function: ease;
 	transition-duration: 0.08s;
-	outline: var(--pic_border) solid black;
+	outline: var(--pic_border) solid black; 
 	outline-offset: calc(-1 * var(--pic_border) - 0.1px);
-	border-collapse: collapse;
 }
 
 #gallery img {
