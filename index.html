@@ -18,7 +18,7 @@
 			var scaleX = Math.round($(this).width() * scale) / $(this).width();
 			var scaleY = Math.round($(this).height() * scale) / $(this).height();
 			$(this).css({'transform' : 'scale(' + scaleX + ',' + scaleY + ')'});
-			para.css({'width' : ($(this).width() * scaleX + 0.5 + 'px')});
+			para.css({'width' : ($(this).width() * scaleX + 0.6 + 'px')});
 			$(this).on('transitionend', function() {
 				para.show();
 				para.animate({'height' : desc_height}, 110, 'swing', console.log(desc_height));

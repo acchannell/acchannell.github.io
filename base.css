@@ -34,7 +34,7 @@
 	position: absolute;
 	box-sizing: border-box;
 	height: 0px;
-	bottom: -9.4px;
+	bottom: -9.42px;
 	border-bottom: 1px solid black;
 	margin-left: calc(-1 * var(--pic_border) - 1px);
 	color: gray;
