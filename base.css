@@ -36,6 +36,8 @@
 	height: 0px;
 	bottom: -9.42px;
 	border-bottom: 1px solid black;
+	padding-left: 10px;
+	padding-right: 10px;
 	margin-left: calc(-1 * var(--pic_border) - 1px);
 	color: gray;
 }
