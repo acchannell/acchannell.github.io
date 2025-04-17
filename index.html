@@ -18,7 +18,7 @@
 			var scaleX = Math.round($(this).width() * scale) / $(this).width();
 			var scaleY = Math.round($(this).height() * scale) / $(this).height();
 			$(this).css({'transform' : 'scale(' + scaleX + ',' + scaleY + ')'});
-			para.css({'width' : ($(this).width() * scaleX + 'px')});
+			para.css({'width' : ($(this).width() * scaleX + 0.5 + 'px')});
 			$(this).on('transitionend', function() {
 				para.show();
 				para.animate({'height' : desc_height}, 110, 'swing', console.log(desc_height));
@@ -46,7 +46,7 @@
 						<li><a class="nav-art" href="">art</a></li>
 					</ul>
 				</nav>
-				<h3>>OvergrownRobot | (1.34)</h3>
+				<h3>>OvergrownRobot | (1.35)</h3>
 			</div>
 			
 			<div id="gallery">
