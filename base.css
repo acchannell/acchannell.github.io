@@ -20,12 +20,12 @@
 }
 
 .imgcont {
+	will-change: transform;
 	position: relative;
 	padding: 10px;
 }
 
 #gallery p {
-	will-change: transform;
 	line-height: var(--desc_height);
 	display: none;
 	pointer-events: none;
