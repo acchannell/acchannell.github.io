@@ -14,20 +14,22 @@
 		$('gallery').find('p').css({'display' : 'block'});
 		$('.triggerImagedesc').hover(function() {
 			var para = $(this).parent().find('p');
-			var scale = getComputedStyle(document.documentElement).getPropertyValue('--img_scale');
+			var doc =  getComputedStyle(document.documentElement);
+			var desc_height = doc.getPropertyValue('--desc_height');
+			var scale = doc.getPropertyValue('--img_scale');
 			var scaleX = Math.round($(this).width() * scale) / $(this).width();
 			var scaleY = Math.round($(this).height() * scale) / $(this).height();
-			console.log($(this).height() * scaleY);
 			$(this).css({'transform' : 'scale(' + scaleX + ',' + scaleY + ')'});
-			para.stop();
-			para.slideDown(100);
-			<!-- para.css({ -->
-				<!-- 'width' : ($(this).width() * mt[0] + 14 + 'px') -->
-			<!-- }); -->
+			para.css({'width' : ($(this).width() * scaleX + 'px')});
+			$(this).on('transitionend', function() {
+				para.show();
+				para.animate({'height' : desc_height}, 110, 'swing', console.log(desc_height));
+			});
 		}, function() {
 			$(this).css({'transform' : 'scale(1, 1)'});
 			var para = $(this).parent().find('p');
-			para.stop();
+			para.finish();
+			para.css({'height': '0px'});
 			para.hide();
 		});
 	});
@@ -46,7 +48,7 @@
 						<li><a class="nav-art" href="">art</a></li>
 					</ul>
 				</nav>
-				<h3>>OvergrownRobot | (1.27)</h3>
+				<h3>>OvergrownRobot | (1.28)</h3>
 			</div>
 			
 			<div id="gallery">

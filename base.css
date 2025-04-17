@@ -17,8 +17,6 @@
 	background: black;
 	opacity: 0.78;
 	color: white;
-	padding-top:10px;
-	padding-bottom:10px;
 }
 
 .imgcont {
@@ -27,16 +25,16 @@
 }
 
 #gallery p {
-	overflow: visible;
 	will-change: transform;
+	line-height: var(--desc_height);
 	display: none;
 	pointer-events: none;
 	position: absolute;
 	box-sizing: border-box;
-	padding: 10px;
-	height: var(--desc_height);
+	height: 0px;
+	bottom: -9.4px;
+	border-bottom: 1px solid black;
 	margin-left: calc(-1 * var(--pic_border) - 1px);
-	margin-top: calc(-1 * var(--desc_height) + var(--pic_border));
 	color: gray;
 }
 
@@ -44,10 +42,9 @@
 #gallery img:hover {
 	display:block;
 	box-sizing: border-box;
-	/* transform: scale(var(--img_scale), var(--img_scale)); */
   	transition-delay: 0s;
 	transition-timing-function: ease;
-	transition-duration: 0.05s;
+	transition-duration: 0.08s;
 	outline: var(--pic_border) solid black;
 	outline-offset: calc(-1 * var(--pic_border) - 0.1px);
 	border-collapse: collapse;
@@ -64,6 +61,7 @@
 	overflow: visible;
 	width: var(--page_width);
 	margin: 0 auto;
+	padding-bottom: 20px;
 	background: #e3e3e3;
 	border-radius:12px;
 	height: auto;
