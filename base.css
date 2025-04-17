@@ -61,7 +61,7 @@
 	overflow: visible;
 	width: var(--page_width);
 	margin: 0 auto;
-	padding-bottom: 20px;
+	padding-bottom: 100px;
 	background: #e3e3e3;
 	border-radius:12px;
 	height: auto;
