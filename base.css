@@ -6,6 +6,7 @@
 	--col: 3;
 	--img_scale: 1.05;
 	--desc_height: 40px;
+	--icon_margin: 4px;
 }
 #gallery {
 	margin: calc(2 * var(--pic_border));
@@ -37,7 +38,7 @@
 	will-change: transform;
 	position: absolute;
 	box-sizing: border-box;
-	display: none;
+	display: flex;
 	pointer-events: none;
 	clip-path: inset(40px 0px 0px 0px);
 	left: 5px;
@@ -47,18 +48,26 @@
 
 .icon {
 	box-sizing: border-box;
-	width: 11.5%;
-	height: calc(100% - 8px);
-	margin: 4px;
-	position: absolute;
-	opacity: 1;
+	width: auto;
+	height: calc(100% - 2 * var(--icon_margin));
+	margin: var(--icon_margin);
+	position: relative;
+}
+
+.title {
+	font-family: "Courier New", monospace; 
+	text-transform: uppercase;
+}
+
+.year {
+	float: left;
 }
 
 #gallery p {
 	display: inline;
 	width: 100%;
 	height: 100%;
-	line-height: var(--desc_height);
+	line-height: calc(var(--desc_height) / 4);
 	padding-left: 10px;
 	padding-right: 10px;
 	color: gray;
@@ -70,7 +79,7 @@
 	box-sizing: border-box;
   	transition-delay: 0s;
 	transition-timing-function: ease;
-	transition-duration: 0.08s;
+	transition-duration: 0.1s;
 	outline: var(--pic_border) solid black; 
 	outline-offset: calc(-1 * var(--pic_border) - 0.1px);
 }

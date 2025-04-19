@@ -19,11 +19,10 @@
 			var scaleY = Math.round($(this).height() * scale) / $(this).height();
 			$(this).css({'transform' : 'scale(' + scaleX + ',' + scaleY + ')'});
 			para.css({'width' : ($(this).width() * scaleX + 0.6 + 'px')});
-			para.css({'clip-path': 'inset(0px 0px 0px 0px)'});
 			$(this).on('transitionend', function() {
 				para.show();
 				para.addClass('animation');
-				para.css({'animation' : 'clipPath 0.3s 1'});
+				para.css({'animation' : 'clipPath 0.2s 1 forwards'});
 			});
 		}, function() {
 			$(this).css({'transform' : 'scale(1, 1)'});
@@ -47,50 +46,64 @@
 						<li><a class="nav-art" href="">art</a></li>
 					</ul>
 				</nav>
-				<h3>>OvergrownRobot | (1.36)</h3>
+				<h3>>OvergrownRobot | (1.37)</h3>
 			</div>
 			
 			<div id="gallery">
 				<div id="skull" class="imgcont">
 						<img class="triggerImagedesc" src="images/0.png" alt="Skull">
 						<div class="desc">
-							<p class="year">2023</p><p align="right">hi</p>
+							<p align="left" class="year">2023</p>
+							<p align="right" class="title">Biospheres</p>
+							<img align="right" display="inline" src="images/icons/vividity.png" class="icon"> 
 						</div>
 				</div>
 				<div id="bloom" class="imgcont">
 						<img class="triggerImagedesc" src="images/1.png" alt="Skull">
 						<div class="desc">
-							<p class="year">2023</p><p>hi</p>
+							<p align="left" class="year">2023</p>
+							<p align="right" class="title">Biospheres</p>
+							<img align="right" display="inline" src="images/icons/bugulon.png" class="icon"> 
 						</div>
 				</div>
 				<div id="biosphere" class="imgcont">
 						<img class="triggerImagedesc" src="images/2.png" alt="Skull">
 						<div class="desc">
-							<p align="right">hi</p><p align="left" class="year">2023</p><img align="right" display="inline" src="images/icons/bugulon.png" class="icon"> 
+							<p align="left" class="year">2023</p>
+							<p align="right" class="title">Biospheres</p>
+							<img align="right" display="inline" src="images/icons/noxcrew.png" class="icon"> 
 						</div>
 				</div>
 				<div id="g" class="imgcont">
 						<img class="triggerImagedesc" src="images/3.png" alt="Skull">
 						<div class = "desc">
-							<p align="right">hi</p><p align="left" class="year">2023</p>
+							<p align="left" class="year">2023</p>
+							<p align="right" class="title">Biospheres</p>
+							<img align="right" display="inline" src="images/icons/rand.png" class="icon"> 
 						</div>
 				</div>
 				<div id="h" class="imgcont">
 						<img class="triggerImagedesc" src="images/4.png" alt="Skull">
 						<div class="desc">
-							<p align="right">hi</p><p align="left" class="year">2023</p>
+							<p align="left" class="year">2023</p>
+							<p align="right" class="title">Biospheres</p>
+							<img align="right" display="inline" src="images/icons/unknown.png" class="icon"> 
 						</div>
 				</div>
 				<div id="i" class="imgcont">
 						<img class="triggerImagedesc" src="images/5.png" alt="Skull">
 						<div class="desc">
-							<p align="right">hi</p><p align="left" class="year">2023</p>
+							<p align="left" class="year">2023</p>
+							<p align="right" class="title">Biospheres</p>
+							<img align="right" display="inline" src="images/icons/ghostdust.png" class="icon"> 
 						</div>
 				</div>
 				<div id="j" class="imgcont">
 						<img class="triggerImagedesc" src="images/6.png" alt="Skull">
 						<div class="desc">
-							<p align="right">hi</p><p align="left" class="year">2023</p>
+							<p align="left" class="year">2023</p>
+							<p align="right" class="title">Biospheres</p>
+							<img align="right" display="inline" src="images/icons/bugulon.png" class="icon"> 
 						</div>
 				</div>
 			</div>
